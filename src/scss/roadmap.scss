@@ -1,0 +1,155 @@
+// @import './variables.scss';
+
+.roadmap {
+  & h1{
+    color: #fff;
+    margin-bottom: 15px;
+    font-weight: 700;
+    letter-spacing: -0.025em;
+    font-size: 40px;
+  }
+
+  & .roadmap__text{
+    color: #fff;
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 20px;
+    letter-spacing: -0.02em;
+  }
+}
+
+
+.timeline {
+  position: relative;
+  display: flex;
+  max-width: 1200px;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+
+.timeline_item {
+  // position: relative;
+  z-index: 2;
+  display: grid;
+  padding-bottom: 80px;
+  grid-auto-columns: 2fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  grid-template-columns: 30% 180px 1fr;
+  grid-template-rows: auto;
+  background-color: rgba(10, 10, 10, 0);
+  opacity: 1;
+}
+
+.timeline_left {
+  text-align: right;
+
+  & .timeline_percent {
+    font-size: 45px;
+    font-weight: 500;
+    color: #fff;
+  }
+}
+
+.timeline_centre {
+  display: flex;
+  justify-content: center;
+
+  & .timeline_circle {
+    position: sticky;
+    top: 50vh;
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    box-shadow: 0 0 0 8px #0a0a0a;
+    background-color: rgb(255, 255, 255);
+    z-index: 10;
+  }
+
+  & .timeline_progress {
+    position: absolute;
+    z-index: -10;
+    width: 3px;
+    height: 40%;
+    background-color: #800990;
+  }
+  
+  // & .timeline_progress-bar {
+  //   position: sticky;
+  //   // bottom: 50vh;
+  //   // width: 3px;
+  //   // height: 10vh;
+  //   background: linear-gradient(180deg, #800990 11%, #000 42%, #800990);
+  //   z-index: -10;
+  // }
+}
+
+.timeline_right {
+  & .timeline_title {
+    margin-bottom: 20px;
+    font-size: 30px;
+    color: #fff;
+  }
+
+  & .timeline_text {
+    font-size: 16px;
+    line-height: 20px;
+    color: #fff;
+  }
+  
+}
+
+.overlay-fade-top {
+  -webkit-text-size-adjust: 100%;
+  font-family: Arial,sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000;
+  -webkit-box-direction: normal;
+  box-sizing: border-box;
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: auto;
+  height: 80px;
+  background-image: linear-gradient(180deg, #0a0a0a, rgba(10, 10, 10, 0));
+}
+
+.overlay-fade-bottom {
+  // -webkit-text-size-adjust: 100%;
+  // font-family: Arial,sans-serif;
+  // font-size: 14px;
+  // line-height: 20px;
+  // color: #000;
+  // -webkit-box-direction: normal;
+  // position: absolute;
+  // left: 0%;
+  // top: auto;
+  // right: 0%;
+  // bottom: 0%;
+  // height: 80px;
+  // background-image: linear-gradient(0deg, #0a0a0a, rgba(10, 10, 10, 0));
+  z-index: 5;
+  box-shadow: 5px 40px red;
+}
+
+@media only screen and (max-width: 995px) {
+  .roadmap__container {
+    position: relative;
+    right: 25%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+
+}
+
+@media only screen and (max-width: 480px) {
+
+}
+
+@media only screen and (max-width: 320px) {
+}

@@ -1,0 +1,83 @@
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+
+.contact__title {
+  color: #fff; }
+
+.contact_form {
+  position: relative;
+  width: 700px;
+  margin-top: 20px; }
+
+.contact_row {
+  display: flex;
+  width: 100%; }
+
+.contact_col50 {
+  width: 50%;
+  margin: 20px; }
+
+.contact_col100 {
+  width: 100%;
+  margin: 20px;
+  text-align: center; }
+
+.contact_form input,
+.contact_form textarea {
+  padding: 10px;
+  width: 100%;
+  border: none;
+  outline: none;
+  background: #fff;
+  color: #fff;
+  font-size: 16px;
+  resize: none;
+  border-radius: 10px; }
+
+.contact_form textarea {
+  height: 100px; }
+
+.contact_form input[type='submit'] {
+  display: inline-block;
+  padding: 10px 30px;
+  font-weight: 500;
+  max-width: 150px;
+  background: #00bcd4;
+  color: #fff;
+  letter-spacing: 1.5px;
+  cursor: pointer; }
+
+.contact_send {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px; }
+
+input:invalid:not(:placeholder-shown),
+textarea:valid:not(:placeholder-shown) {
+  border: 1px solid #690f0f;
+  border-radius: 5px; }
+
+input:valid:not(:placeholder-shown),
+textarea:valid:not(:placeholder-shown) {
+  border: 1px solid #235a0d;
+  border-radius: 5px; }
+
+.copyright {
+  margin: 10px 0;
+  color: #fff; }
+
+@media (max-width: 991px) {
+  .contact_form {
+    width: 100%; }
+
+  .contact_row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%; }
+
+  .contact_col50 {
+    width: 100%; } }

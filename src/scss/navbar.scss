@@ -1,0 +1,106 @@
+@import './variables.scss';
+
+.navbar {
+  width: 100vw;
+  height: 72px;
+  background: #000;
+  position: fixed;
+  z-index: 100;
+}
+
+.navbar__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 12%;
+  height: 100%;
+}
+
+.navbar__logo {
+  display: flex;
+  align-items: center;
+
+  & img {
+    margin-right: 10px;
+    width: 105px;
+    height: 77px;
+  }
+
+  & p {
+    display: flex;
+    letter-spacing: 1.2px;
+    font-weight: 600;
+    font-size: 45px;
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(205, 4, 231, 1);
+  }
+
+  & .text-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  & span {
+    color: rgb(132, 81, 153);
+    font-size: 35px;  
+    font-weight: 800;
+    text-shadow: 
+      -0.0075em 0.0075em 0 mix(#fff, rgb(132, 81, 153), 94%),
+      0.005em 0.005em 0 mix(#fff, rgb(132, 81, 153), 60%),
+      0.01em 0.01em 0 mix(#fff, rgb(132, 81, 153), 62%), 
+      0.015em 0.015em mix(#fff, rgb(132, 81, 153), 64%), 
+      0.02em 0.02em 0 mix(#fff, rgb(132, 81, 153), 66%), 
+      0.025em 0.025em 0 mix(#fff, rgb(132, 81, 153), 68%),
+      0.03em 0.03em 0 mix(#fff, rgb(132, 81, 153), 70%),
+      0.035em 0.035em 0 mix(#fff, rgb(132, 81, 153), 72%);
+  }
+}
+
+.navbar__links {
+  display: flex;
+  align-items: center;
+}
+
+.navbar__link {
+  padding: 7px 15px;
+  margin-left: 10px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  border: 2px solid #000;
+
+  &:hover {
+    color: rgb(161, 106, 159);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+}
+
+.opensea {
+  padding: 7px 25px;
+  color: #000;
+  background: rgb(255, 255, 255);
+  border-radius: 25px;
+
+  &:hover {
+    color:#000;
+    text-decoration: none;
+    background: rgb(161, 106, 159);
+    border: 2px solid rgb(0, 0, 0);
+  }
+}
+
+.navbar__network {
+  margin-left: 15px;
+  width: 32px;
+  height: 32px;
+
+  & svg:hover path{
+    fill:rgb(177, 23, 143);
+  }
+
+}

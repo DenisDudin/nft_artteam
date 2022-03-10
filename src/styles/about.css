@@ -1,0 +1,25 @@
+.about {
+  height: 50vh; }
+
+.about__container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  margin: 0 15%; }
+
+.about__title {
+  color: #a80fc7;
+  font-size: 40px;
+  font-weight: 900;
+  text-shadow: 4px 4px 15px black, -4px -4px 15px black;
+  margin: auto;
+  text-transform: uppercase; }
+
+.border {
+  position: absolute;
+  width: 680px;
+  height: 235px; }
+
+.about__movie {
+  border: 4px double #d10cb0;
+  z-index: 2; }

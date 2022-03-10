@@ -1,0 +1,52 @@
+@import './variables.scss';
+
+.about {
+  height: 50vh;
+}
+
+.about__container {
+
+  display: flex;
+  align-items: center;
+  height: 100%;
+  margin: 0 15%;
+}
+
+.about__title {
+  color: rgb(168, 15, 199);
+  // -webkit-text-stroke: 1px black;
+  font-size: 40px;
+  font-weight: 900;
+  text-shadow: 4px 4px 15px rgb(0, 0, 0),
+  -4px -4px 15px rgb(0, 0, 0);
+  margin: auto;
+  text-transform: uppercase;
+}
+
+
+.border {
+  position: absolute;
+  width: 680px;
+  height: 235px;
+
+}
+
+.about__movie {
+  border: 4px double rgb(209, 12, 176);
+  z-index: 2;
+}
+
+@media only screen and (max-width: 995px) {
+
+}
+
+@media only screen and (max-width: 768px) {
+
+}
+
+@media only screen and (max-width: 480px) {
+
+}
+
+@media only screen and (max-width: 320px) {
+}

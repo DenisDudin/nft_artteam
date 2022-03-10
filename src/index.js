@@ -1,17 +1,33 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import {Navbar} from '../src/components/Navbar';
+import {About} from '../src/sections/About'
+import {Roadmap} from '../src/sections/Roadmap'
+import {Community} from '../src/sections/Community'
+import {Partners} from '../src/sections/Partners'
+import {Founders} from '../src/sections/Founders'
+import {Client} from '../src/sections/Client'
+import {Discord} from '../src/sections/Discord'
+import {FAQ} from '../src/sections/FAQ'
+import {Contact} from '../src/sections/Contact'
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <div className="parallax">
+      <Navbar />
+      <About />
+      <Roadmap />
+      <Community />
+      <Client />
+      <Partners />
+      <Founders />
+      <Discord />
+      <FAQ />
+      <Contact />
+    <div className="mask"></div>
+    </div>
   </React.StrictMode>,
   document.getElementById('root')
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();

@@ -1,0 +1,85 @@
+.faq__title {
+  text-align: center;
+  width: 50%;
+  font-size: 50px;
+  color: #fff;
+  line-height: 0.9; }
+  .faq__title span {
+    font-size: 30px;
+    color: #f001b4;
+    line-height: 3; }
+
+.faq__module {
+  display: flex;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  border-radius: 24px;
+  background-color: #b8b8b8;
+  color: #1d1d1f; }
+
+details {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 900px; }
+
+summary::-webkit-details-marker {
+  display: none; }
+
+summary::-moz-list-bullet {
+  list-style-type: none; }
+
+summary::marker {
+  display: none; }
+
+summary {
+  display: block;
+  padding: 5px 20px 15px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid rgba(134, 134, 139, 0.2);
+  font-size: 20px;
+  font-weight: 700;
+  color: #222;
+  cursor: pointer;
+  position: relative; }
+
+summary:before {
+  top: .4em;
+  right: .3em;
+  color: transparent;
+  background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTYuNTkgOC41OUwxMiAxMy4xNyA3LjQxIDguNTkgNiAxMGw2IDYgNi02eiIvPjxwYXRoIGQ9Ik0wIDBoMjR2MjRIMHoiIGZpbGw9Im5vbmUiLz48L3N2Zz4=") no-repeat 50% 50%/1em 1em;
+  width: 1em;
+  height: 1em;
+  content: "";
+  position: absolute;
+  transition: transform .5s; }
+
+details[open] > summary:before {
+  transform: scale(1, -1); }
+
+summary ~ * {
+  padding: 0 1em 10px 1.4em; }
+
+details[open] summary ~ * {
+  animation: sweep .5s ease-in-out; }
+
+@keyframes sweep {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }

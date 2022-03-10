@@ -1,13 +1,37 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500&display=swap');
+@import '../src/styles/background.css';
+@import '../src/styles/navbar.css';
+@import '../src/styles/about.css';
+@import '../src/styles/roadmap.css';
+@import '../src/styles/community.css';
+@import '../src/styles/partners.css';
+@import '../src/styles/founders.css';
+@import '../src/styles/client.css';
+@import '../src/styles/discord.css';
+@import '../src/styles/faq.css';
+@import '../src/styles/contact.css';
+
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  scroll-behavior: smooth;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  background-image: url(./img/cosmos.png);
+  background-attachment: fixed;
+}
+
+.title {
+  display: block;
+  margin: 0 auto 30px;
+}
+
+.container {
+  padding: 4 0px 10%;
+  display: flex;
+  flex-direction: column;
 }
