@@ -1,4 +1,4 @@
-// @import './variables.scss';
+@import './variables.scss';
 
 .roadmap {
   & h1{
@@ -73,7 +73,7 @@
     z-index: -10;
     width: 3px;
     height: 40%;
-    background-color: #800990;
+    background-color: $pink-dark;
   }
   
   // & .timeline_progress-bar {

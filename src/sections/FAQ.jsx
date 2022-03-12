@@ -37,6 +37,14 @@ function FAQ() {
         <summary>How can I use my NFT?</summary>
         <p>You can use a token from "ArtTeam as an exclusive Avatar in the Metacommunity, and it serves as a ticket to a network of Investors and Society focused on growth in every aspect of our lives. We will also partner with investment companies to ensure that capital will never be an issue for ArtTeam owners with a vibrant business concept.</p>
         </details>
+        <details>
+        <summary>Our metaverse </summary>
+        <p>In the near future, the company ArtTeam will start developing its own meta-universe. There you will be able to use NFT tokens, buy or create your own product, and even earn money.</p>
+        </details>
+        <details>
+        <summary>For clients</summary>
+        <p>Our company will create a unique NFT collection for artists, brands and bloggers. With us you can develop a high-quality 3D design token for any budget. Email: official@artteamnft.com</p>
+        </details>
       </div>
     </div>
   </section>)

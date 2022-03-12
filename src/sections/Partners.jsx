@@ -3,7 +3,7 @@ import moolahmobb from '../img/moolahmobb.jpg'
 function Partners() {
   return (<section className="partners">
       <div className="partners__container container">
-        <h1 className="partners__title">⁃ Project Partners ⁃</h1>
+        <h1 className="partners__title title">⁃ Project Partners ⁃</h1>
           <div className="cards">
             <div className="card">
                 <div className="card__img">

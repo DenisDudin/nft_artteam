@@ -38,7 +38,8 @@
   border-radius: 30px; }
 
 .community__title {
-  color: #fc00b0;
+  margin-bottom: 20px;
+  color: #e607db;
   text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8);
   font-size: 40px;
   text-align: center;
@@ -57,7 +58,7 @@
   margin: 0 auto;
   padding: 10px 35px;
   text-transform: uppercase;
-  color: #fc00b0;
+  color: #b204c2;
   background-color: white;
   text-decoration: none;
   font-size: 20px;
@@ -85,9 +86,9 @@
     mix-blend-mode: none;
     display: block; }
   .community__link:after {
-    background-color: #fa0293; }
+    background-color: #e607db; }
   .community__link:before {
-    background-color: #b100b1; }
+    background-color: #b204c2; }
   .community__link:hover {
     mix-blend-mode: color-dodge;
     background-color: #fff65b;

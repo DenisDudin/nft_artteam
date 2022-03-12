@@ -5,99 +5,205 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  // background: $color1-section;
+  background: rgba(0, 0, 0, 1);
+}
+
+.contact__container {
+  margin: 50px auto 0;
+  width: 70%;
 }
 
 .contact__title {
-  color: #fff;
-}
-
-.contact_form {
-  position: relative;
-  width: 700px;
-  margin-top: 20px;
-}
-
-.contact_row {
-  display: flex;
-  width: 100%;
-}
-
-.contact_col50 {
-  width: 50%;
-  margin: 20px;
-}
-
-.contact_col100 {
-  width: 100%;
-  margin: 20px;
   text-align: center;
+  color: #fff;
+  font-size: 40px;
 }
 
-.contact_form input,
-.contact_form textarea {
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  margin: 0 auto;
+  width: 600px;
+  margin: 50px auto; 
+}
+
+.contact__row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.contact__col50 {
+  width: 50%;
+}
+
+.contact__col100 {
+  width: 100%;
+  
+  & textarea {
+    height: 100px;
+  }
+}
+
+.contact__col50:first-child {
+  margin-right: 40px;
+}
+
+.contact__form input,
+.contact__form textarea {
   padding: 10px;
   width: 100%;
   border: none;
   outline: none;
-
-  background: #fff;
+  background: #414141;
   color: #fff;
   font-size: 16px;
   resize: none;
   border-radius: 10px;
+  
 }
 
-.contact_form textarea {
-  height: 100px;
-}
 
-.contact_form input[type='submit'] {
+.contact__form input[type='submit'] {
   display: inline-block;
   padding: 10px 30px;
   font-weight: 500;
   max-width: 150px;
 
-  background: #00bcd4;
+  background: $pink-dark;
   color: #fff;
   letter-spacing: 1.5px;
   cursor: pointer;
 }
 
-.contact_send {
+.contact__send {
+  display: flex;
+  justify-content: center;
+}
+
+.contact__thank {
+  opacity: 0;
+  color: $pink-dark;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.5em;
+}
+
+.button-send {
+  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 30px;
+
+  width: 150px;
+  height: 50px;
+
+  background-image: url(../img/cosmos.png);
+  background-attachment: fixed;
+  border: none;
+  border-radius: 25px;
+  opacity: 1;
+  transition: all 0.1s ease;
+  transform-style: preserve-3d;
+  perspective-origin: 49% 50%;
+
+  text-transform: uppercase;
+  font-size: 1.3em;
+  font-weight: 700;
+  color: $pink-dark;
+  
+  box-shadow: 1px 1px 5px $pink-light, -1px -1px 5px $pink-light;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 1px 1px 5px #ddd, -1px -1px 5px #ddd;
+    color: #ddd;
+    background-color: #7f5a83;
+    background-image: linear-gradient(315deg, $pink-dark 0%, #111 70%);
+  }
+
+  p {
+    transition: all 0.2s ease;
+    user-select: none;
+    line-height: 33px;
+    position: absolute;
+  }
 }
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.2;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 
 input:invalid:not(:placeholder-shown),
 textarea:valid:not(:placeholder-shown) {
-  border: 1px solid rgb(105, 15, 15);
-  border-radius: 5px;
+  border: 2px solid rgb(105, 15, 15);
+
 }
 
 input:valid:not(:placeholder-shown),
 textarea:valid:not(:placeholder-shown) {
-  border: 1px solid rgb(35, 90, 13);
-  border-radius: 5px;
+  border: 2px solid rgb(35, 90, 13);
+
 }
 
+.contact__links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  margin-bottom: 30px;
+  & span {
+    font-size: 20px;
+    color: #fff;
+    padding-right: 30px;
+    border-right: 1px solid #fff;
+  }
+
+  & svg:first-child {
+    margin-left: 15px;
+  }
+
+  & svg {
+    width: 32px;
+    height: 32px;
+
+    &:hover path{
+      fill:rgb(177, 23, 143);
+    }
+  }
+}
+
+
 .copyright {
-	margin: 10px 0;
+  text-align: center;
+	margin: 10px;
 	color: #fff; 
 }
 
 @media (max-width: 991px) {
-  .contact_form {
+  .contact__form {
     width: 100%;
   }
-  .contact_row {
+  .contact__row {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
   }
-  .contact_col50 {
+  .contact__col50 {
     width: 100%;
   }
 }

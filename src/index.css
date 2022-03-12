@@ -28,6 +28,10 @@ body {
 .title {
   display: block;
   margin: 0 auto 30px;
+  font-size: 40px;
+  text-shadow: 0 10px 10px rgba(113, 15, 133, 0.6),
+  2px 2px 1px rgb(94, 19, 112),
+  -1px -1px 1px rgb(216, 199, 212);
 }
 
 .container {

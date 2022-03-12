@@ -2,7 +2,7 @@
 function Client() {
   return(<section className="client">
     <div className="client__container">
-      <h1 className="client_title">⁃ For Client ⁃</h1>
+      <h1 className="client_title title">⁃ For Client ⁃</h1>
       <div className="client__grid">
         <div className="client__cell">
           <h1>ArtTeam</h1>

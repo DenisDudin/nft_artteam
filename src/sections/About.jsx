@@ -1,4 +1,5 @@
 import aboutMovie from '../video/about.mp4'
+import avatar from '../img/avatar1.png'
 
 
 
@@ -10,8 +11,10 @@ function About() {
           <source src={aboutMovie} type="video/mp4" />
         </video>
       </div> */}
+      <img src={avatar} alt="" />
       <div className="about__text">
-        {/* <h1 className="about__title">Специалисты по производству NFT коллекций</h1> */}
+        <h1 className="about__title">SPECIALISTS IN THE PRODUCTION OF NFT COLLECTIONS</h1>
+        <a href="">By on Opensea</a>
       </div>
       <div className="border"></div>
     </div>

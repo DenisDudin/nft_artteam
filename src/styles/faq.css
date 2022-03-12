@@ -1,19 +1,19 @@
 .faq__title {
   text-align: center;
   width: 50%;
-  font-size: 50px;
+  font-size: 50px !important;
   color: #fff;
   line-height: 0.9; }
   .faq__title span {
-    font-size: 30px;
-    color: #f001b4;
+    font-size: 35px;
+    color: #b204c2;
     line-height: 3; }
 
 .faq__module {
   display: flex;
   width: 100%;
   max-width: 900px;
-  margin: 0 auto;
+  margin: 0 auto 100px;
   padding: 40px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;

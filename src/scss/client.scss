@@ -1,20 +1,20 @@
+@import './variables.scss';
 
 .client__container {
-  margin: 50px 70px;
+  width: 80%;
+  margin: 50px auto;
 }
 
 .client_title {
+  text-transform: uppercase;
   margin-bottom: 40px;
   text-align: center;
-  font-size: 40px;
-  color: rgb(209, 18, 168);
-  font-size: 40px;
-  text-shadow: 1px 2px 2px rgb(248, 174, 236);
+  color: $pink-dark;
 }
 
 .client__grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   grid-column-gap: 40px;
   grid-row-gap: 40px;
 }
@@ -22,7 +22,7 @@
 .client__cell {
   display: flex;
   flex-direction: column;
-  padding: 20px 30px;
+  padding: 20px 35px;
   background-color:hsla(0, 0%, 100%, 0.15);
   border-radius: 20px;
   color: #fff;
@@ -31,9 +31,12 @@
     display: flex;
     margin: 0 auto 15px;
     border-bottom: 1px solid #fff;
+    font-size: 26px;
   }
 
   & p {
+    font-size: 18px;
+    letter-spacing: 0.5px;
     text-align: justify;
   }
 }

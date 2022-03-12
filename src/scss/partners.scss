@@ -10,11 +10,7 @@
   justify-content: center;
   margin-bottom: 50px;
   text-transform: uppercase;
-  color: rgb(218, 14, 184);
-  font-size: 40px;
-  text-shadow: 0 10px 15px rgba(178, 23, 209, 0.6),
-  1px 1px 1px rgb(109, 17, 133),
-  -1px -1px 1px rgb(184, 139, 178);
+  color: $pink-dark;
 }
 
 .partners__list {
@@ -39,8 +35,8 @@
   transition: all 0.25s;
 
   &:hover {
-    top: -15px;
-    box-shadow: 0 10px 16px rgba(136, 49, 117, 0.6);
+    top: -12px;
+    box-shadow: 0 5px 3px rgba($pink-dark, .3);
   }
 
   & h4 {
@@ -76,15 +72,15 @@
 }
 
 .links {
- justify-content: center;
   display: flex;
   align-items: center;
   margin-bottom: 20px;
 
-  & a {
+  & .card__button {
     font-weight: 700;
 
     &:hover {
+      color:#fff;
       background-color: #7f5a83;
       background-image: linear-gradient(315deg, #713e77 0%, #a337af 70%);
     }

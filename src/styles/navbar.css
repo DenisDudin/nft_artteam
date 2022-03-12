@@ -32,10 +32,10 @@
     align-items: center;
     justify-content: center; }
   .navbar__logo span {
-    color: #845199;
+    color: #8814b6;
     font-size: 35px;
     font-weight: 800;
-    text-shadow: -0.0075em 0.0075em 0 #f8f5f9, 0.005em 0.005em 0 #ceb9d6, 0.01em 0.01em 0 #d0bdd8, 0.015em 0.015em #d3c0da, 0.02em 0.02em 0 #d5c4dc, 0.025em 0.025em 0 #d8c7de, 0.03em 0.03em 0 #dacbe0, 0.035em 0.035em 0 #ddcee2; }
+    text-shadow: -0.0075em 0.0075em 0 #f8f1fb, 0.005em 0.005em 0 #cfa1e2, 0.01em 0.01em 0 #d2a6e3, 0.015em 0.015em #d4aae5, 0.02em 0.02em 0 #d7afe6, 0.025em 0.025em 0 #d9b4e8, 0.03em 0.03em 0 #dbb9e9, 0.035em 0.035em 0 #debdeb; }
 
 .navbar__links {
   display: flex;

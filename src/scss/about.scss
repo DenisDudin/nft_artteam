@@ -1,26 +1,44 @@
 @import './variables.scss';
 
-.about {
-  height: 50vh;
-}
 
 .about__container {
-
   display: flex;
-  align-items: center;
+  justify-content: center;
   height: 100%;
-  margin: 0 15%;
+
+  & img {
+    margin: 70px auto 0;
+    width: 50%;
+  }
+  background:rgb(0, 0, 0);
 }
 
-.about__title {
-  color: rgb(168, 15, 199);
-  // -webkit-text-stroke: 1px black;
-  font-size: 40px;
-  font-weight: 900;
-  text-shadow: 4px 4px 15px rgb(0, 0, 0),
-  -4px -4px 15px rgb(0, 0, 0);
-  margin: auto;
-  text-transform: uppercase;
+.about__text {
+  position: absolute;
+  width: 450px;
+  top: 300px;
+  right: 30px;
+  text-align: center;
+
+  & .about__title {
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 35px;
+    font-weight: 900;
+    text-shadow: 4px 4px 15px rgb(0, 0, 0),
+    -4px -4px 15px rgb(0, 0, 0);
+    text-transform: uppercase;
+
+  }
+
+  & a {
+    padding: 10px 25px;
+    text-decoration: none;
+    background: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 20px;
+  }
 }
 
 

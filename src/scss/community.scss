@@ -46,7 +46,8 @@
 }
 
 .community__title {
-  color: rgb(252, 0, 176);
+  margin-bottom: 20px;
+  color: $pink-light;
   text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8);
   font-size: 40px;
   text-align: center;
@@ -68,7 +69,7 @@
   padding: 10px 35px;
 
   text-transform: uppercase;
-  color: rgb(252, 0, 176);
+  color: $pink-dark;
   background-color: rgb(255, 255, 255);
   text-decoration: none;
   font-size: 20px;
@@ -108,11 +109,11 @@
   }
 
   &:after {
-    background-color: #fa0293;
+    background-color: $pink-light;
   }
 
   &:before {
-    background-color: #b100b1;
+    background-color: $pink-dark;
   }
 
   &:hover {

@@ -72,7 +72,7 @@
 	transition: 500ms ease-in-out;
 
   &:hover {
-    box-shadow: 12px 8px 0 rgb(178, 4, 194), -12px -8px 0 rgb(230, 7, 219);
+    box-shadow: 12px 8px 0 $pink-dark, -12px -8px 0 $pink-light
   }
 
   &:focus {
